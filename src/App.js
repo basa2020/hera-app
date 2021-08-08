@@ -23,7 +23,6 @@ function App() {
     axios.spread((...responses) => {
       const responseOne = responses[0];
       const responseTwo = responses[1];
-      console.log('req1',responseOne)
       console.group('req2',responseTwo)
          const newZnanstveniRadovi = sortiranePoStarosti(
            differentialOfArrays(responseOne.data, responseTwo.data)
