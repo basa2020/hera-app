@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+.gray_border{
+  margin: auto;
+  margin-bottom: 10px;
+  width: fit-content;
+  border: 5px solid gray;
+}
+.red_border{
+  margin: auto;
+  margin-bottom: 10px;
+  width: fit-content;
+  border: 5px solid red;
+}
+
+.zanr_red{
+color:red
+}
+.btn{
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight:500;
+  background-color: rgb(122, 230, 122);
+}
