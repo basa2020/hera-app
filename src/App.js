@@ -10,6 +10,7 @@ import Lista from "./Lista";
 
 function App() {
   const [znastveniRadovi, setZnanstveniRadovi] = useState([]);
+  const [znanstveniRadoviProvjera,setZnanstventiRadoviProvjera]=useState([])
   const [prosjekGodina, setProsjekGodina] = useState(null);
   const [odabraniRadovi,setOdabraniRadovi]=useState([])
   useEffect(() => {
@@ -23,8 +24,7 @@ function App() {
     axios.spread((...responses) => {
       const responseOne = responses[0];
       const responseTwo = responses[1];
-      console.log('req1',responseOne)
-      console.group('req2',responseTwo)
+      setZnanstventiRadoviProvjera(responseTwo.data)
          const newZnanstveniRadovi = sortiranePoStarosti(
            differentialOfArrays(responseOne.data, responseTwo.data)
          );

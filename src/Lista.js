@@ -22,8 +22,6 @@ function Lista({
      () => elementKojiSeNajvisePonavlja(zanrovi),
      [zanrovi]
    );
-  console.log('zanrovi',zanrovi)
-  console.log('najvise',mostFrequent)
   return (
     <div>
      {mostFrequent.maxCount>=3 && <h1>Zanr koje se najvise ponavlja : {mostFrequent.newMostFrequent}</h1>}
